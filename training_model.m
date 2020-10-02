@@ -31,7 +31,7 @@ for i = 1:1
         max_accuracy = acc;
         save weights;
     end
-    %fprintf("End of %d run(s)\n",i);
+    fprintf("End of %d run(s)\n",i);
 end
     
 
@@ -74,7 +74,7 @@ function [acc,W1,b1,W2,b2,W3,b3] =  train(X,W1,b1,W2,b2,W3,b3,y,num_iters,alpha)
     %[~,p] = max(A3,[],1);
     p = A3>0.5;
     acc = mean(double(p == y)) * 100;
-    fprintf("Accuracy = 89.236111"); %f\n",acc);
+    fprintf("Accuracy = %f\n",acc);
 end
 
 
